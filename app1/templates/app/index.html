@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Ricky的練習網站</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <!--      這是我的第一個練習程式     -->
+    <h1 style="font-size: 35px;background-color:darkturquoise;">Ricky的網站</h1> <br> 
+    <hr> 
+    <p> 供練習使用</p>
+    <a href="page1.html"> 第一頁 </a><br>
+    <img style ="width:10%;" style ="height:5%;" src="https://images.pexels.com/photos/984539/pexels-photo-984539.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">  
+      <h3> 動態網頁測試</h3>
+      <form action="/12345"method="POST">
+      {% csrf_token %}
+        <h4>文字</h4>
+        <input type="text" name="text1"><br/>
+        <h4>文字1</h4>
+        <input type="text" name="text2"><br/>
+        <p></p>  
+        <input type="submit"><br/>
+        <input type="reset"><br/>  
+          
+      </form>
+      <h3> 動態網頁結果顯示</h3>
+      <h4>結果1</h4>
+      <h4>===></h4>{{id1data}}
+       <h4>結果2</h4>
+    {{result2}}
+      
+      
+  </body>
+
+</html>
