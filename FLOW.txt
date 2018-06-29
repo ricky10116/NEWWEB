@@ -1,0 +1,39 @@
+
+======================= ======================= =======================
+
+echo "# WEBTEST" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ricky10116/WEBTEST.git
+git push -u origin master
+
+======================= ======================= =======================
+1  git init
+2  git remote add origin https://github.com/ricky10116/WEBWEB.git
+3  git remote -v
+4  @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+
+vi.gitignore
+
+touch .gitignore
+
+vi .gitignore
+
+*.swp
+*.swo
+__pycache__ 
+py3env
+*.sqlite3
+myvenv
+
+   @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ 
+5git add --all .
+6git commit -m "first commit"
+7git push -u origin master
+
+
+
+
+https://zlargon.gitbooks.io/git-tutorial/content/file/modify.html
+https://gitbook.tw/chapters/using-git/ignore.html

@@ -18,9 +18,10 @@ def Addtext(request):
     abc = request.POST['text1'] # 從 html 來 
     try:
       Table1.objects.create(Text1 = abc,id=1)  
-      Table1.objects.filter(id=1).update(Text1 = abc) # 寫進資料庫
+      #Table1.objects.filter(id=1).update(Text1 = abc) # 寫進資料庫
     except: 
-        None
+        #None
+        Table1.objects.filter(id=1).update(Text1 = abc) # 寫進資料庫
      # Table1.objects.create(Text1 = abc,id=1)
     return redirect('app/index.html')
 '''
